@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.date-container{
+    display: flex;
+    flex-direction: column;
+}
+.wadaw{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.input-date{
+    width: 100%;
+    display: flex; 
+    padding: 40px 20px 0 20px;
+    flex-direction: column;     
+    justify-content: center;
+}
+button{
+    background-color: hsl(259, 100%, 65%);
+    width: 80px;
+    height: 80px;
+    border: 0;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+button:hover{
+    background-color: black;
+}
+.button::before{
+    content: "";
+    height: 2px;
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+.calculator-container{      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    min-height: 450px;
+    width: 700px;
+    border-radius: 20px 20px 150px 20px;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: hsl(0, 1%, 44%);
+}
+.error{
+    outline: 2px solid hsl(0, 100%, 67%);
+    font-size: 32px;
+    max-width: 120px;
+    height:60px;
+    border-radius: 5px;
+    border: 0;
+    padding: 1px;
+}
+.success{
+    outline: 1.5px solid  hsl(0, 0%, 86%);
+    
+}
+.success:focus{
+    outline: 2px solid hsl(228, 45%, 44%) ;
+}
+.attribution { 
+    font-size: 11px; text-align: center;  
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.output-date{
+    max-height: 100%;
+    width: 80%;
+    position: relative;
+    transform: translateY(-20px) translateX(-20px);
+}
+span{
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 800;
+}
+.dash{
+    color: hsl(259, 100%, 65%);
+}
+
+.labelerr{
+    color: hsl(0, 100%, 67%);
+}
+.error-alert {
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    position: absolute;
+    transform: translateY(85px);
+    font-weight: 400;
+    font-style: italic;
+}
+@media screen and (width < 700px ){
+    .calculator-container{      
+        width: 90%;
+        border-radius: 20px 20px 100px 20px ;
+    }
+    .wadaw{
+        width: 100%;
+    }
+    .error{
+    font-size: 15px;
+    max-width: 70px;
+    height:40px;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    .button img{
+        height: 25px;
+    }
+    span{
+        font-size: 45px;
+    }
+    .output-date{
+        max-height: 100%;
+        width: 100%;
+        position: relative;
+        transform: translateY(-50px) translateX(50px);
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .button::before{
+        width: 40%;
+    }
+    .button::after{
+    content: "";
+    height: 2px;
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    }
+}

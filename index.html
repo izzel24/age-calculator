@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+<body>
+<div class="calculator-container">
+<div class="input-date"> 
+  <form name="form1" action="">
+    <div class="wadaw">
+    <div class="date-container">
+      <label for="day" class="label">DAY</label> 
+      <Input placeholder="DD" name="day" class="error success">
+      <p class="error-alert 1"></p>
+      </div>
+    <div class="date-container">
+      <label for="month" class="label">MONTH</label> 
+      <Input placeholder="MM" name="month" class="error success">
+      <p class="error-alert 2"></p>
+    </div>
+    <div class="date-container">
+      <label for="year" class="label">YEAR</label> 
+      <Input placeholder="YYYY" name="year" class="error success"> 
+      <p class="error-alert 3"></p>
+    </div>
+  </div>
+  <div class="button">
+  <button type="submit"><img src="/assets/images/icon-arrow.svg" alt=""></button>
+</div>
+  </form>
+  </div>
+<div class="output-date">  
+  <span class="dash" id="years">--</span><span> years</span><br>
+  <span class="dash" id="months">--</span><span> months</span><br>
+  <span class="dash" id="days">--</span><span> days</span>
+  </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Henry Frizzel Johanis</a>.
+</div>
+</body>
+</html>
