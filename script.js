@@ -17,12 +17,12 @@ function getinput(){
         let datedifference = currentdate - birthdate;
         
         let day = Math.floor((datedifference % (1000*60*60*24*30.44))/(1000*60*60*24));
-        let month = Math.floor((datedifference % (1000*60*60*24*30.44))/(1000*60*60*24*30.44));
+        let month = Math.floor((datedifference % (1000*60*60*24*365.25))/(1000*60*60*24*30));
         let year = Math.floor(datedifference /(1000*60*60*24*365.25));
     
         outdays.innerHTML= day;
         outmonths.innerHTML=month;
-        outyears.innerHTML=  year;
+        outyears.innerHTML= year;
 }
 function checker() {
     let days = parseInt(form1.day.value, 10);
